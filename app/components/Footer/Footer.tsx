@@ -47,18 +47,19 @@ export default function Footer() {
                             <li><a href="tel:+79025053966">+7 (902) 505-39-66</a></li>
                             <li><a href="https://t.me/@Tory1287" target="_blank" rel="noreferrer">Telegram</a></li>
                             <li><a href="https://wa.me/79025053966" target="_blank" rel="noreferrer">WhatsApp</a></li>
+                            <li>г. Владивосток, ул. Некрасовская, 38а</li>
                         </ul>
                     </div>
 
-                    <div className={styles.column}>
-                        <h2>Юридическое</h2>
-                        <ul>
-                            <li>ИП Иванова В.А.</li>
-                            <li>ИПН: 7712345678</li>
-                            <li>ОГРН: 1187746000000</li>
-                            <li><a href="/privacy">Политика конфиденциальности</a></li>
-                        </ul>
-                    </div>
+                    {/*<div className={styles.column}>*/}
+                    {/*    <h2>Юридическое</h2>*/}
+                    {/*    <ul>*/}
+                    {/*        <li>ИП Иванова В.А.</li>*/}
+                    {/*        <li>ИПН: 7712345678</li>*/}
+                    {/*        <li>ОГРН: 1187746000000</li>*/}
+                    {/*        <li><a href="/privacy">Политика конфиденциальности</a></li>*/}
+                    {/*    </ul>*/}
+                    {/*</div>*/}
                 </div>
 
                 <div className={styles.bottom}>
