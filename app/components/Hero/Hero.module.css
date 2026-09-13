@@ -1,0 +1,122 @@
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+            90deg,
+            rgba(10, 8, 16, 0.55) 0%,
+            rgba(10, 8, 16, 0.45) 45%,
+            rgba(10, 8, 16, 0.15) 100%
+    );
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+    margin-top: 40px;
+}
+
+.title {
+    margin: 0 0 24px;
+    color: #ffffff;
+    font-size: 64px;
+    line-height: 1.15;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+}
+
+.titleItalic {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.description {
+    margin: 0 0 40px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 480px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.primaryButton {
+    padding: 16px 32px;
+    background-color: #ffffff;
+    color: #14121c;
+    border-radius: 2px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.primaryButton:hover {
+    opacity: 0.85;
+}
+
+.secondaryButton {
+    padding: 16px 32px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    border-radius: 2px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.secondaryButton:hover {
+    background-color: #ffffff;
+    color: #14121c;
+}
+
+@media (max-width: 1024px) {
+
+    .title {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 640px) {
+    .title {
+        font-size: 34px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .primaryButton,
+    .secondaryButton {
+        text-align: center;
+    }
+}

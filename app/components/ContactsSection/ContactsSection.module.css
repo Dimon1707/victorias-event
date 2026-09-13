@@ -1,0 +1,174 @@
+.section {
+    background: #f7f5f0;
+    color: #242321;
+}
+
+.heading {
+    margin-bottom: 62px;
+}
+
+.eyebrow,
+.label {
+    display: block;
+    color: #AD89FB;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.eyebrow {
+    margin-bottom: 18px;
+}
+
+.heading h2 {
+    margin: 0 0 16px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 58px;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    line-height: 1.04;
+
+    @media (max-width: 1650px) {
+        font-size: 46px;
+    }
+
+    @media (max-width: 1279px) {
+        font-size: 40px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 32px;
+    }
+}
+
+.heading p {
+    max-width: 520px;
+    margin: 0;
+    color: #8d8981;
+    font-size: 15px;
+    line-height: 1.7;
+
+    @media (max-width: 1650px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 1279px) {
+        font-size: 13px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 12px;
+    }
+}
+
+.content {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.8fr) minmax(420px, 1.2fr);
+    gap: 72px;
+    align-items: stretch;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 2px;
+}
+
+.infoItem {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.icon {
+    display: grid;
+    width: 38px;
+    height: 38px;
+    flex: 0 0 38px;
+    place-items: center;
+    border: 1px solid #e2dccc;
+    color: #AD89FB;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.infoItem a,
+.infoItem address,
+.infoItem p {
+    display: block;
+    margin: 7px 0 0;
+    color: #4d4a45;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.infoItem a:hover {
+    color: #AD89FB;
+}
+
+.messengers {
+    display: flex;
+    gap: 8px;
+    margin-top: 9px;
+}
+
+.messengers a {
+    margin: 0;
+    padding: 10px 14px;
+    background: #1f1e1c;
+    color: #fff;
+    font-size: 12px;
+    transition: background 0.2s ease;
+}
+
+.messengers a:hover {
+    background: #AD89FB;
+    color: #fff;
+}
+
+.mapWrapper {
+    min-height: 390px;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    min-height: 390px;
+    overflow: hidden;
+    background: #e3e0d9;
+
+    @media (max-width: 767px) {
+        min-height: 300px;
+        max-height: 340px;
+    }
+}
+
+.mapFallback {
+    padding: 32px;
+    color: #6c675f;
+}
+
+@media (max-width: 800px) {
+    .section {
+        padding: 72px 20px 80px;
+    }
+
+    .heading {
+        margin-bottom: 42px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    /*.mapWrapper,*/
+    /*.map {*/
+    /*    min-height: 340px;*/
+    /*}*/
+}
