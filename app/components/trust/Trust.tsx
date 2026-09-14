@@ -45,9 +45,7 @@ export function TrustSection(): React.JSX.Element {
                     </h2>
 
                     <p className={styles.subtitle}>
-                        Мы убираем хаос и стресс из организации. Вы получаете
-                        <br className={styles.desktopBreak}/>
-                        результат — и время наслаждаться им.
+                        Мы убираем хаос и стресс из организации. Вы получаете <br className={styles.desktopBreak}/>результат — и время наслаждаться им.
                     </p>
                 </header>
 

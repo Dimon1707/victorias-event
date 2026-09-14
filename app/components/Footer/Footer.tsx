@@ -4,7 +4,7 @@ import Container from "@components/container/Container";
 
 const navigation = [
     {label: 'Услуги', href: '#services'},
-    {label: 'Почему мы', href: '#about'},
+    {label: 'Почему мы', href: '#why-us'},
     {label: 'Портфолио', href: '#portfolio'},
     {label: 'Отзывы', href: '#reviews'},
     {label: 'Контакты', href: '#contacts'},
